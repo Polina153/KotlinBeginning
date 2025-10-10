@@ -22,7 +22,44 @@ import java.util.Scanner
 }*/
 
 fun main() {
-    val temperatureInFahrenheit: Double = getTemperatureFromUser()
+
+    /*val numbers = arrayOf(1, 2, 3, 4, 5)
+    for (num in numbers){
+        if(num %2 == 0) println("Element $num")
+    }
+    for (i in 1..5){
+        println("$i ")
+    }
+    for (i in 5 downTo 0){
+        print("$i ")
+    }*/
+    /*    val age = -60
+        if(age > 18){
+            println("You can vote")
+        } else {
+            println("You are too young for voting")
+        }*/
+    /* var index = 1
+     while (index <= 5) {
+         println("$index ")
+         index++
+     }
+     do {
+         println("Do-while $index ")
+         index++
+     } while (index <= 5)*/
+    /*var nullableString: String? = "kotlin"
+    val length: Int? = nullableString?.length
+    println(length)*/
+
+    var nullableString: String? = null
+    //val nonNullableString: String = nullableString ?:"kotlin"
+    //val length: Int = nonNullableString.length
+    val length: Int = nullableString?.length ?: 0
+    println(length)
+    //println(nonNullableString)
+}
+/*    val temperatureInFahrenheit: Double = getTemperatureFromUser()
     val temperatureInCelsius = convertFahrenheitToCelsius(temperatureInFahrenheit)
     val description = determineWeather(temperatureInCelsius)
 
@@ -47,7 +84,7 @@ fun determineWeather(celsius: Double): String {
         celsius in 20.0..30.0 -> "Тепло"
         else -> "Жарко"
     }
-}
+}*/
 
 /*//Задача
 //Пользователь вводит температуру в градусах Фаренгейта.
