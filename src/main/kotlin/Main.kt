@@ -23,6 +23,29 @@ import java.util.Scanner
 
 fun main() {
 
+    /*val animal1 = Animal("Mursik")
+    val animal2 = Animal("Tusik", 4)
+    println(animal1.name)*/
+    val cat = Cat("Barsik", 105)
+    val plate = Plate(0)
+    plate.info()
+    cat.printInfo()
+    cat.eat(plate)
+    plate.info()
+    cat.printInfo()
+    plate.increaseFood(200)
+    plate.info()
+    cat.printInfo()
+    cat.eat(plate)
+    plate.info()
+    cat.printInfo()
+    val dog = Dog("Tusik")
+    dog.guard()
+
+
+
+
+
     /*val numbers = arrayOf(1, 2, 3, 4, 5)
     for (num in numbers){
         if(num %2 == 0) println("Element $num")
@@ -52,12 +75,12 @@ fun main() {
     val length: Int? = nullableString?.length
     println(length)*/
 
-    var nullableString: String? = null
+    /*var nullableString: String? = null
     //val nonNullableString: String = nullableString ?:"kotlin"
     //val length: Int = nonNullableString.length
     val length: Int = nullableString?.length ?: 0
     println(length)
-    //println(nonNullableString)
+    //println(nonNullableString)*/
 }
 /*    val temperatureInFahrenheit: Double = getTemperatureFromUser()
     val temperatureInCelsius = convertFahrenheitToCelsius(temperatureInFahrenheit)
