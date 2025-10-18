@@ -23,10 +23,91 @@ import java.util.Scanner
 
 fun main() {
 
+
+    // LET
+/*    var nullableName: String? = "Kotlin"
+
+    nullableName?.length
+
+    nullableName?.let {
+        it.length
+        println("Привет, $it!") // Выводится только если nullableName не null
+    }
+
+    val list = mutableListOf<Int>()
+
+    list.also {
+        println("Список до добавления: $it")
+    }.add(10)
+
+    println("Список после добавления: $list")*/
+
+    //RUN
+    /*fun main() {
+        val rectangle = Rectangle(width = 10, height = 5)
+
+        val area = rectangle.run {
+            width * height
+        }
+
+        val area2 = rectangle.width * rectangle.height
+
+        println("Площадь прямоугольника: $area")
+
+    }
+
+    data class Rectangle(val width: Int, val height:Int)
+*/
+
+    //WITH
+    /*const val PI = 3.14
+
+    fun main() {
+        val circle = Circle(radius = 7)
+
+        val rectangle = Rectangle(width = 10, height = 5)
+
+        val perimeter = with(circle) {
+            PI * radius * 2
+        }
+
+        with(rectangle){
+            width*=2
+            height *=3
+            println("Rectangle width = $width and height = $height")
+        }
+
+        println("Длина окружности: $perimeter")
+
+    }
+
+    data class Rectangle(var width: Int, var height:Int)
+    data class Circle(val radius: Int)*/
+
+
+    //APPLY
+    /*fun main() {
+        val builder = StringBuilder()
+
+        builder.apply {
+            append("Привет, ")
+            append("мир!")
+            append(" Hello ")
+            append("world!")
+            append(" Hi, ")
+            append("hi!")
+        }
+
+        println(builder)
+
+    }
+    */
+
+
     /*val animal1 = Animal("Mursik")
     val animal2 = Animal("Tusik", 4)
     println(animal1.name)*/
-    val cat = Cat("Barsik", 105)
+    /*val cat = Cat("Barsik", 105)
     val plate = Plate(0)
     plate.info()
     cat.printInfo()
@@ -40,11 +121,7 @@ fun main() {
     plate.info()
     cat.printInfo()
     val dog = Dog("Tusik")
-    dog.guard()
-
-
-
-
+    dog.guard()*/
 
     /*val numbers = arrayOf(1, 2, 3, 4, 5)
     for (num in numbers){
